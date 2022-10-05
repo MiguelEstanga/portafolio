@@ -1,0 +1,172 @@
+:root{
+ 
+    --colorLetraPrimario:#fff;
+}
+.contenedorSection{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px,2fr));
+    overflow: hidden;
+    padding: 10px 10px;
+  word-wrap: break-word;
+    min-height:650px  ;
+   max-width: 100%;
+  
+    
+    
+    
+}
+
+.animacionimg{
+    animation: rotar  15s linear infinite;
+}
+
+.gradiente{
+    background-image: linear-gradient(to left ,var(--segundarioc) , var(--prymaryc) );
+}
+
+.png{
+    width: 20rem;
+}
+
+.sizeImg{
+    width:500px ;
+    height: 300px;
+    margin: 20px 0px;
+}
+
+/**/
+.section1{
+    background-color:var(--segundarioc);
+   
+  
+}
+.section2{
+    background-color: var(--prymaryc);
+   
+}
+
+.section3  p{
+    font-size: 20px;
+    text-align: justify;
+    color: black;
+    display: flex;
+   padding: 10px;
+   font-weight: 200;
+}
+
+.section3 span{
+    font-size: 50px;
+    margin-left: 40px;
+}
+
+.info2{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;    
+}
+.info2 p{
+    color: black;
+    margin: 20px 40px;
+}
+.tituloType1{
+    font-size: 50px;
+    margin-left: 40px;
+    font-weight: 700;
+    color: var(--colorLetraPrimario);
+    animation: texto 2s linear infinite;
+  
+    margin-left: 40px;
+}
+
+.info2 .p{
+    font-size: 20px;
+    text-align:left;
+    color: var(--colorLetraPrimario);
+    display: flex;
+   padding: 10px;
+   font-weight: 100;
+}
+
+.infoImagen{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease;
+    width:100%;
+    height: 100%;
+
+}
+
+
+
+
+
+
+footer{
+    margin-bottom: 0px;
+}
+
+@keyframes texto {
+    0%   {
+        transform: translateY(10px);
+        z-index: 0;
+    }
+   
+    50%  {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+  }
+
+  @keyframes rotar {
+    0%   {
+       transform: rotateY(0deg);
+      
+    }
+    25%  {
+        transform: rotateY(90deg);
+    }
+    50%  {
+        transform: rotateY(180deg);
+    }
+    75%{
+        transform: rotateY(240deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+        
+    }
+  }
+
+
+
+  @media (max-width: 500px){
+ 
+   .contenedorSection{
+    width: 100vw;
+    position: relative;
+    top: 75px;
+    grid-template-columns: repeat(auto-fill, minmax(400px,4fr));
+    padding: 10px;
+   }
+ 
+   
+  }
+
+  @media (max-width:1000px) {
+        .contenedorSection{
+            position: relative;
+            top: 75px;
+            height: 800px;
+        }
+  }
+
+  @media (min-width:700px){
+ 
+  }

@@ -1,0 +1,137 @@
+
+.contensection4{
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(200px,1fr));
+    position: relative;
+    top: 40px;
+    background-color: #222;
+    
+    height: 30vw;
+    min-width: 100vw;
+
+    
+}
+.redesConteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    
+    padding: 10px;
+   
+   
+
+}
+
+.redesConteiner ul{
+  
+    position: relative;
+    display: flex;
+    transform-style: preserve-3d;
+    transform: rotateY(25deg) skew(10deg);
+}
+.redesConteiner ul li{
+    margin: 0 10px;
+    position: relative;
+    list-style: none;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+}
+.redesConteiner ul li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    font-size: 30px !important;
+    color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redesConteiner ul li:hover span{
+    color: #ffff;
+    z-index: 1000;
+    transition: .5s;
+    box-shadow: -1px 1px -1px rbga(0,0,0,0.5);
+}
+
+.redesConteiner ul li:hover span:nth-child(5){
+    transform: translate(60px , -60px);
+    opacity: .9;
+}
+.redesConteiner ul li:hover span:nth-child(4){
+    transform: translate(40px , -40px);
+    opacity: .8;
+}
+.redesConteiner ul li:hover span:nth-child(3){
+    transform: translate(20px , -20px);
+    opacity: .7;
+}
+.redesConteiner ul li:hover span:nth-child(2){
+    transform: translate(10px , -10px);
+    opacity: .6;
+}
+
+.redesConteiner ul li:hover span:nth-child(1){
+    transform: rotateY(25deg) skew(10deg);
+    transform: translate(0px , 0px);
+    opacity: .5;
+}
+
+.redesConteiner ul li:nth-child(1):hover span{
+    background: #3b5999;
+}
+.redesConteiner ul li:nth-child(2):hover span{
+    background: #566573;
+}
+.redesConteiner ul li:nth-child(3):hover span{
+    background: #e4405f;
+}
+.redesConteiner ul li:nth-child(4):hover span{
+    background: #273746;
+}
+.redesConteiner ul li:nth-child(5):hover span{
+    background: #2ECC71;
+}
+
+@media (max-width:500px) {
+    .redesConteiner ul li{
+ 
+        position: relative;
+        list-style: none;
+        width: 70px;
+        height: 70px;
+    }
+    .redesConteiner ul{
+   
+        position: relative;
+        display: flex;
+        transform-style: preserve-3d;
+        transform: rotate(01deg) skew(25deg);
+    }
+
+    
+}
+
+@media (max-width:800px) {
+    .redesConteiner ul li{
+ 
+        position: relative;
+        list-style: none;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .redesConteiner ul{
+   
+        position: relative;
+        display: flex;
+              
+        transform-style: preserve-3d;
+     
+    }
+}
