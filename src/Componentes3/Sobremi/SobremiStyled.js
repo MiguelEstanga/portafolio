@@ -9,7 +9,7 @@ export const Imagen = styled.div`
     height: 100%;
     margin: auto;
     transform-origin: right;
-    transform:  translateX(100%) ;
+  
     opacity: 0;
     background-image: ${({img}) => img};
     background-position: center;
@@ -22,7 +22,7 @@ export const Imagen = styled.div`
 
     &.active{
         opacity: 1;
-        transform:  translateX(0) rotateY(30deg);
+        transform:  rotateY(30deg);
     }
 `
 export const Texto = styled.div`
@@ -31,9 +31,9 @@ export const Texto = styled.div`
     width: 90%;
     
    
-    transform: translateZ(-3000px) rotateX(80deg) ;
+  
     padding: 4px;
-    opacity: 0;
+    opacity: 0.3;
     font-weight: 100;
     line-height: 30px;
     font-size: 20px;
@@ -71,7 +71,7 @@ export const Texto = styled.div`
   
 
     &.active{
-        transform: translateZ(0) rotateX(0);
+        
         opacity: 1;
     }
 
