@@ -15,10 +15,6 @@ export const ContainerHabilidades =styled.div`
     width: 100%;
     height: 100%;
     display: grid;
-   
-   
-    
-   
     padding: 10px;
     .texto{
         margin: auto;
@@ -45,7 +41,7 @@ export const Box = styled.div`
     box-shadow:0px 5px 10px #000 ;
     padding: 10px;
     border-radius: 4px;
-    transform: translateZ(10px) translateX(-100%);
+   
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -77,7 +73,7 @@ export const Box = styled.div`
     }
     &.active{
         opacity: 1;
-        transform: translateX(0);
+        
     }
 
     &:hover{
