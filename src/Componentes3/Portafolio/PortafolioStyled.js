@@ -49,7 +49,7 @@ export const Carta = styled.div`
     margin: auto;
     box-shadow: 10px 10px 20px black;
     opacity: 0;
-    transform: scale(0.3);
+    
     .img{
         background: #fff;
         width: 100%;
