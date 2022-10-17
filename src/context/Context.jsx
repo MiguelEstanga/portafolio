@@ -1,30 +1,25 @@
 
-import { useContext, useReducer } from "react";
+import { useContext } from "react";
 import { createContext, useState } from "react";
-import { Reducer , InicialState } from "./Reducer";
-const ModalContext = createContext()
 
-export const useModal = ()=>{
-    return useContext(ModalContext)
+const Global = createContext()
+
+export const useContexto = ()=>{
+    return useContext(Global)
 } 
-export default function Contexto({children}){
-  
-    
 
-    const [redu , dispach] = useReducer(Reducer , InicialState)
-    const [render, setrender] = useState(false)
-    const funciones = {
-       
-        redu,
-        dispach,
-        render,
-        setrender
+export default function Contexto({children}){
+    const [active , setActive] = useState(false)
+    const values ={
+        active,
+        setActive
+
     }
     return(
-        <ModalContext.Provider value={funciones}>
+        <Global.Provider value={values}>
             {children}
-        </ModalContext.Provider>
+        </Global.Provider>
     )
 } 
 
-export {ModalContext}
+export {Global}

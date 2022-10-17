@@ -1,16 +1,18 @@
-import React ,{lazy , useEffect}from 'react'
+import React ,{ useEffect}from 'react'
 import { Sobremi } from './Componentes3/Sobremi/Sobremi'
 import { Wraper } from './Componentes3/Wreaper/Wraper'
 import { GlobalStyle } from './style-components-golbales/GlobalStyle'
 import { useObserver } from './hook/useObserver'
 import { Habilidades } from './Componentes3/Habilidades/Habilidades'
 import { Portafolio } from './Componentes3/Portafolio/Portafolio'
-import { Menu } from './Componentes3/Menu/Menu'
+
 import { useState } from 'react'
 import { Cargando } from './Componentes3/Cargando'
 import { Like } from './Componentes3/Like/Like'
 import { Comentario } from './Componentes3/Comentario/Comentario'
 import { Footer } from './Componentes3/footer/Footer'
+import { Navegacion } from './Componentes3/Menu/Navegacion'
+
 
 
 
@@ -32,10 +34,7 @@ export default function App() {
       setElementos(elementos)
       setCarga(false)
     },2000)
-  
 
-   
- 
   } , [setElementos])
 
   useEffect(function() {
@@ -53,16 +52,20 @@ export default function App() {
   return (
     <>
       {carga? <Cargando/>:null}
-     
-      <Menu/>
+      
+
+      
+      <Navegacion/>
       <GlobalStyle/>
       <Wraper/>
-      <Sobremi id="Sobremi" />
-      <Habilidades id="Habilidades"/>
-      <Portafolio id="Proyectos" />
+      <Sobremi />
+      <Habilidades/>
+      <Portafolio />
       <Like/>
       <Comentario/>
       <Footer/>
+
+      
     </>
   )
 }

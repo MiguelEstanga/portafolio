@@ -6,17 +6,18 @@ export const useObserver = (configuracion) => {
     const [entradas , setEntradas] = useState([])
     const [Elementos , setElementos] = useState([])
     function cambio(entradas){
-        console.log(Elementos.length)
+        
         setEntradas(entradas)
     }
     const Observador = new IntersectionObserver(cambio,configuracion)
 
     useEffect(function(){
+        Observador.disconnect()
         if(Elementos.length > 0 ){
             Elementos.forEach(elementos => Observador.observe(elementos))
         }
 
-        return function(){
+        return function cleanUp(){
             if(Observador){
                 Observador.disconnect()
             }

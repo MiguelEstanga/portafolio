@@ -38,14 +38,14 @@ export const Img = styled.div`
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
-
+        transition: 10s;
         &:hover{
             background-position: bottom;
         }
 `
 export const Carta = styled.div`
     width: 70%;
-    height: 700px;
+    height: 900px;
     margin: auto;
     box-shadow: 10px 10px 20px black;
     opacity: 0;
@@ -73,7 +73,10 @@ export const Carta = styled.div`
             }
         }
     }
-
+    .descripcion{
+       
+        margin-top: 10px;
+    }
     &.active{
         opacity: 1;
         transform: scale(1);

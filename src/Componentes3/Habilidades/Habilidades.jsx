@@ -1,25 +1,27 @@
 import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import { useRef } from 'react'
-import { Data } from './Data'
+
+
 import { Box, Container, ContainerHabilidades, Titulo } from './HabilidadesStyle'
 
 
 
 
 export const Habilidades = () => {
-    const [habilidades , setHabilidades] = useState([])
 
-    useEffect(function(){
-        fetch('http://localhost:4000/Habilidades')
-            .then(res => res.json())
-            .then(res => setHabilidades(res))
+    const [data , setData] = useState([])
+    useEffect( function(){
+       fetch('https://servidormiguel.herokuapp.com/Habilidades')
+        .then(res => res.json())
+        .then( res => setData(res))
     },[])
+
+    
     return (
-        <Container id="Habilidades">
+        <Container id="habilidades">
             <Titulo>
-                <h2>
+                <h2 color='#000'>
                     Habilidades
                 </h2>
             </Titulo>
@@ -30,15 +32,15 @@ export const Habilidades = () => {
                 <div className="BoxConten" >
                     {   
                         
-                        habilidades && habilidades?.map(data => (
+                       data && data?.map(data => (
                             <Box key={data._id} 
-                                 style={{'--delay' : `${data.delay}`} } 
+                                 style={{'--delay' : `1`} } 
                                  className="observado"
-                                 color={data.color} 
+                                 
                             >
                                
                                 <div className="icon" style={{'--c' : `${data.color}`}}>
-                                    <img src={`http://localhost:4000${data.ruta}`} />
+                                    <img src={data.Imagen} />
                                 </div>
                                 <div className="nombre">
                                     {data.nombre}

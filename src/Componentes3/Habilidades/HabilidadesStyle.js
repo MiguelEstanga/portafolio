@@ -42,29 +42,25 @@ export const ContainerHabilidades =styled.div`
 export const Box = styled.div`
     width: 250px;
     height: 300px;
-    box-shadow:10px 10px 10px black ;
-   
+    box-shadow:0px 5px 10px #000 ;
+    padding: 10px;
     border-radius: 4px;
     transform: translateZ(10px) translateX(-100%);
     opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 3s;
+    transition: 500ms;
     transition-delay: calc( 0.1s * var(--delay));
     display: flex;
     margin-bottom: 10px;
     flex-direction: column;
-    background: ${ ({color}) => color };
-    svg , ion-icon{
-        font-size: 150px;
-        border-radius:10px ;
-        background: var(--c);
-    }
+      
 
     img{
         width: 100%;
         height: 100%;
+        border-radius: 50%;
     }
 
     .nombre{
@@ -82,6 +78,11 @@ export const Box = styled.div`
     &.active{
         opacity: 1;
         transform: translateX(0);
+    }
+
+    &:hover{
+        transform: scale(1.1);
+        z-index: 10;
     }
 `
 

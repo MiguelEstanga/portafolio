@@ -14,7 +14,7 @@ export const Footer = () => {
 const Conten = styled.footer`
     width: 100%;
     height: 30vh;
-   
+    background-color:#fff ;
     display: flex;
     text-align: center;
     justify-content: center;
