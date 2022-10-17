@@ -22,7 +22,7 @@ export const Sobremi = () => {
         fecha de  Obctubre del 2022 hago este portafolio con la intención de dar un perfil como desarrollador 
         y mostrar las tecnología que domino actualmente.
         Este sitio web está diseñado con unas
-        de mis tecnologias favorita y actualmente la que más utilizo Reacjs en la sección de Habilidades
+        de mis tecnologias favoritas y actualmente la que más utilizo Reacjs en la sección de Habilidades
         muestro otras tecnologías que también utilizo muy a menudo <a href='#habilidades'>Habilidades</a>
         También pretendo utilizar este sitio como galería para poder mostrar mis componentes , app y sitios web que estaré haciendo más
         adelante los cuales podrás ver en la sección de <a href='#Proyectos'>Proyectos</a> actualmente son pocos
