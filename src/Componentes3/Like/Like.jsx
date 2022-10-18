@@ -97,7 +97,7 @@ export const Like = () => {
 
             </Box>
             <Button onClick={e => {
-            setRefres(!active)
+            setActive(!active)
             setTimeout(function(){
                 setActive(false)
             },1000)
