@@ -12,7 +12,7 @@ import { Like } from './Componentes3/Like/Like'
 import { Comentario } from './Componentes3/Comentario/Comentario'
 import { Footer } from './Componentes3/footer/Footer'
 import { Navegacion } from './Componentes3/Menu/Navegacion'
-import { Modal } from './Componentes3/Modal/Modal'
+import { Modal } from './Componentes3/modal/Modal'
 import { useContexto } from './context/Context'
 
 
