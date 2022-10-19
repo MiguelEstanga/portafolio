@@ -9,7 +9,7 @@ export const Imagen = styled.div`
     height: 100%;
     margin: auto;
     transform-origin: right;
-  
+    
     opacity: 0;
     background-image: ${({img}) => img};
     background-position: center;
