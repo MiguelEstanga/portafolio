@@ -10,9 +10,15 @@ export const useContexto = ()=>{
 
 export default function Contexto({children}){
     const [active , setActive] = useState(false)
+    const [modal ,  setmodal] = useState(false)
+    const [imagen , setImagen] = useState('')
     const values ={
         active,
-        setActive
+        setActive,
+        modal,
+        setmodal,
+        imagen,
+        setImagen
 
     }
     return(
