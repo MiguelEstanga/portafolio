@@ -1,4 +1,4 @@
-import React ,{ useEffect}from 'react'
+ import React ,{ useEffect}from 'react'
 import { Sobremi } from './Componentes3/Sobremi/Sobremi'
 import { Wraper } from './Componentes3/Wreaper/Wraper'
 import { GlobalStyle } from './style-components-golbales/GlobalStyle'
@@ -12,7 +12,8 @@ import { Like } from './Componentes3/Like/Like'
 import { Comentario } from './Componentes3/Comentario/Comentario'
 import { Footer } from './Componentes3/footer/Footer'
 import { Navegacion } from './Componentes3/Menu/Navegacion'
-
+import { Modal } from './Componentes3/Modal/Modal'
+import { useContexto } from './context/Context'
 
 
 
@@ -21,7 +22,7 @@ import { Navegacion } from './Componentes3/Menu/Navegacion'
 export default function App() {
  
   const [carga , setCarga] = useState(true)
- 
+ const {modal} =  useContexto()
   const  [entradas , setElementos , Observador] = useObserver({
     threshold:0
   })
@@ -46,13 +47,13 @@ export default function App() {
           entry.target.classList.remove('active')
         }
    })
-  } ,[Observador, setElementos])
+  } ,[Observador, setElementos] )
 
-
+ 
   return (
     <>
-      {carga? <Cargando/>:null}
-      
+      {carga ? <Cargando/>:null}
+      {modal ? <Modal/> : null}
 
       
       <Navegacion/>
