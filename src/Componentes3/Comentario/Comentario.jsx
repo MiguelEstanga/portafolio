@@ -117,7 +117,7 @@ export const Comentario = () => {
                         >
                         </textarea>
 
-                        {errors.Comentario?.type === 'required' && <div className='error' >Pofa no me mandes un comentario basio</div>}
+                        {errors.Comentario?.type === 'required' && <div className='error' >Pofa no me mandes un comentario basios</div>}
                         {errors.Comentario?.type === 'minLenght' && <div className='comentarioR'>necesitas minimo 3 letras para este campo</div>}
                     </div>
                    
