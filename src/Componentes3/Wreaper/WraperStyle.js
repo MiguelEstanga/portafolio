@@ -8,26 +8,10 @@ export const Container = styled.div`
     position: relative;
     transform-style: preserve-3d;
     perspective: 1000px;
-    background: #0C0B0B;
+    background: linear-gradient(140deg ,   #0C0B0B , #01080D);
     
 
-    &::before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: #0C0B0B;
-        background-image:  url( ${ ({img}) => img} );
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: .1;
-
-    }
+    
 `
 
 export const Box = styled.div`
@@ -50,7 +34,7 @@ export const Avatar = styled.div`
     position: absolute;
     top: -100px;
     background-image: url( ${ ({img}) => img} );
-    background-position: center;
+    background-position: 18px -50px;
     background-size: cover;
     background-repeat: no-repeat;
     border: solid 10px rgb(66, 7, 138) ;
