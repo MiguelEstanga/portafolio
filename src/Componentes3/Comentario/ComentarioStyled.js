@@ -154,7 +154,7 @@ export const Button = styled.button`
         }
 `
 export const Avatar = styled.div`
-   
+    cursor: pointer;
     width: 100%;
     height: 100px;
     border-radius: 50%;
@@ -162,6 +162,10 @@ export const Avatar = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 `
 export const Data = styled.div`
     border: solid 1px;
@@ -195,6 +199,12 @@ export const Contenido = styled.div`
         font-weight: 700;
         display: grid;
        
+    }
+    .email , .nombre{
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
     }
 
     .comentario{
