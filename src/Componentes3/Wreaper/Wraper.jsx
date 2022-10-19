@@ -3,18 +3,18 @@ import React from 'react'
 
 import { Avatar, Box, Container, Info, Nombre, Redes, Ul } from './WraperStyle'
 import portada from '../../public/portada.png'
-import portadaFondo from "./portadafondo.jpg"
+
 
 export const Wraper = () => {
 
 
 
   return (
-    <Container img={portadaFondo} id="inicio">
+    <Container  id="inicio">
 
       <Box >
         <Avatar img={portada} className="observado">
-
+          
         </Avatar>
         <Info>
           <Nombre>
