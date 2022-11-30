@@ -48,7 +48,7 @@ export const Carta = styled.div`
     height: 900px;
     margin: auto;
     box-shadow: 10px 10px 20px black;
-    opacity: 0;
+   
     
     .img{
         background: #fff;
@@ -77,8 +77,5 @@ export const Carta = styled.div`
        
         margin-top: 10px;
     }
-    &.active{
-        opacity: 1;
-        transform: scale(1);
-    }
+   
 `
