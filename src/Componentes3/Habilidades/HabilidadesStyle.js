@@ -42,7 +42,7 @@ export const Box = styled.div`
     padding: 10px;
     border-radius: 4px;
    
-    opacity: 0;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,10 +71,7 @@ export const Box = styled.div`
         align-items: center;
         justify-content: center;
     }
-    &.active{
-        opacity: 1;
-        
-    }
+
 
     &:hover{
         transform: scale(1.1);
