@@ -34,7 +34,7 @@ export const Portafolio = () => {
 
                     data && data?.map(data => (
 
-                        <Carta key={data._id} className="observado ">
+                        <Carta key={data._id} >
 
                             <Img imagen={data.ruta}>
                             </Img>
