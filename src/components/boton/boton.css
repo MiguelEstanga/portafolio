@@ -1,0 +1,13 @@
+.boton{
+  background-color: transparent;
+  border: solid 1px var(--text_color-2);
+  border-radius: calc(  ( 20px * var(--proporcion) ) );
+  padding: calc(  ( 10px * var(--proporcion)) ) calc(  ( var(--padding) * var(--proporcion) ) );
+  color: var(--text_color-2);
+  cursor: pointer;
+}
+
+.boton:hover{
+  background-color: var(--text_color-2);
+  color: var(--color_fondo);
+}

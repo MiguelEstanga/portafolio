@@ -1,0 +1,31 @@
+{
+  "navbar": {
+    "home": "About Me",
+    "about": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "portfolio": {
+    "title": "Projects",
+    "technologies": "Technologies",
+    "link": "View Project"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "contact": {
+    "title": "Contact",
+    "description1" : ""
+  },
+  "footer": {
+    "copyright": "© 2025 My Portfolio. All rights reserved."
+  },
+  "about": {
+    "title": "Sobre mi",
+    "description1": "Full-stack developer with a 10-year track record in programming and 5 years of work experience. Specialized in mobile and web application development, with expert command of PHP (Laravel), Node.js, JavaScript, React, React Native, and Flutter. Extensive experience with MySQL databases. I have provided robust and efficient solutions in backend (PHP/Laravel) and frontend (React, Blade, Flutter) roles for various companies.",
+    "description2": "Soy un apasionado [Tu Profesión/Interés] con experiencia en [Tus Experiencias]. Me encanta crear [Lo Que Te Gusta Crear] y siempre estoy buscando aprender nuevas cosas."
+  },
+  "company": {
+    "title": "Companies and trends with which I have collaborated and worked"
+  }
+}

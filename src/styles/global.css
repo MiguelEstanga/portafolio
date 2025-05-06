@@ -1,0 +1,35 @@
+:root {
+  --proporcion: 1;
+  --color_fondo: #323334;
+  --container_color: #31363F;
+  --text_color-1: #EEEEEE;
+  --text_color-2: #AF8260;
+  --boton_color-1: #803D3B;
+  --aun_no_se: #E4C59E;
+  --jet: #292929;
+  --size_menu : 100px;
+  --padding : 20px;
+ --ancho_app : 1400px;
+}
+
+.ts{
+  border: solid 1px red;
+}
+.pd{
+  padding: var(--padding);
+}
+
+.mxw{
+  max-width: var(--ancho_app);
+  margin: auto;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial';
+  font-size: 100;
+  font-size: calc(  ( var(--proporcion) * 1rem ) );
+  
+}

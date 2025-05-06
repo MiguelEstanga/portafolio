@@ -1,0 +1,31 @@
+/* Si solo usabas .hover para la transición, puedes eliminarlo */
+/*.hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.hover:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}*/
+
+/* En tu archivo de estilos global o en un archivo .module.css */
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.portafolio-cart {
+  /* Otros estilos de tu tarjeta */
+  transition: box-shadow 0.8s ease-in-out, background-color 0.3s ease-in-out, opacity 0.5s;
+  /* Especifica las propiedades que quieres animar y su duración */
+}
+
+.portafolio-cart:hover {
+  cursor: pointer;
+  border:solid 1px white;
+  transform: scale(1.05); /* Si quieres mantener el efecto de escala al hacer hover */
+  /* Los estilos de sombra y fondo ya están definidos en las clases de Tailwind en tu componente */
+}

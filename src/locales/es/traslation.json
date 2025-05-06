@@ -1,0 +1,33 @@
+{
+  "navbar": {
+    "home": "Sobre mi",
+    "about": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "portfolio": {
+    "title": "Proyectos",
+    "technologies": "Tecnologias",
+    "link": "Ver Proyecto"
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "contact": {
+    "title": "Contacto",
+    "description1":"Don't hesitate to contact me! You can send me an email to ",
+    "description2":" O puedes enviarme un whatsapp para respuesta inmediata "
+  },
+  "footer": {
+    "copyright": "© 2025 Mi Portafolio. Todos los derechos reservados."
+  },
+  "about": {
+    "title": "Sobre mi",
+    "description1": "Desarrollador Full Stack con una trayectoria de 10 años en programación y 5 años de experiencia laboral. Especializado en el desarrollo de aplicaciones móviles y web, con manejo experto de PHP (Laravel), Node.js, JavaScript, React, React Native y Flutter. Amplia experiencia en bases de datos MySQL. He aportado soluciones robustas y eficientes en roles de Backend (PHP/Laravel) y Frontend (React, Blade, Flutter) para diversas empresas",
+    "description2": "Soy un apasionado [Tu Profesión/Interés] con experiencia en [Tus Experiencias]. Me encanta crear [Lo Que Te Gusta Crear] y siempre estoy buscando aprender nuevas cosas."
+  },
+  "company": {
+    "title": "Empresas y entidades con las que he colaborado y trabajado"
+  }
+
+}
