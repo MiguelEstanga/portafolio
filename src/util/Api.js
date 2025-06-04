@@ -1,4 +1,4 @@
-export const url = "http://localhost:3003/api/v1/";
+export const url = "https://cb6d-86-38-32-20.ngrok-free.app/api/v1/";
 
 export const enpoint = {
   usuarios: "usuarios",
