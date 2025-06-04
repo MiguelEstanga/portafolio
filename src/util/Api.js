@@ -8,6 +8,22 @@ export const enpoint = {
   cv: "CV"
 };
 
+// Función de utilidad para hacer fetch con el header de ngrok
+export const fetchWithNgrok = async (url, options = {}) => {
+  const defaultHeaders = {
+    'ngrok-skip-browser-warning': 'true'
+  };
+
+  const response = await fetch(url, {
+    ...options,
+    headers: {
+      ...defaultHeaders,
+      ...(options.headers || {})
+    }
+  });
+  return response;
+};
+
 export const GET = {
   usuarios: (endpoint) => `${url}${enpoint.usuarios}/${endpoint}`,
   portafolios: () => `${url}${enpoint.portafolios}`,

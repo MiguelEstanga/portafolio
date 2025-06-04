@@ -10,7 +10,11 @@ import { use, useEffect, useState } from "react";
 import Empresas from "./layouts/empresas/Empresas";
 
 function App() {
-  
+ 
+
+  useEffect(() => {
+    console.log("hola XD");
+  }, []);
 
   return (
     <>
